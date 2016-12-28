@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Marbel Binary Computer</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="/favicon.png" />
+    <script src="TemplateData/UnityProgress.js"></script>
+</head>
+
+<body class="template">
+    <p class="header"><span>Unity WebGL Player | </span>Binary</p>
+    <div class="template-wrap clear">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+        <br>
+        <p>Left mouse to rotate, middle mouse to pan and zoom.
+            <br> Click the pipes to spawn ball</p>
+        <script type='text/javascript'>
+        var Module = {
+            TOTAL_MEMORY: 268435456,
+            errorhandler: null, // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+            compatibilitycheck: null,
+            dataUrl: "Release/Marblewebgl.data",
+            codeUrl: "Release/Marblewebgl.js",
+            memUrl: "Release/Marblewebgl.mem",
+
+        };
+        </script>
+        <script src="Release/UnityLoader.js"></script>
+
+</body>
+
+</html>
