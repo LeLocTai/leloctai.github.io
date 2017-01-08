@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Virtual Mechanical Adder</title>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/scss/global.css">
+    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">    <script src="/webgl/unityProgress.js"></script>
+</head>
+
+<body>
+    <nav id="topnav" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <!--Group brand and button for mobile-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>                
+                    <div class="navicon"></div>
+                </button>
+                <a class="navbar-brand nav-text" href="/">
+                    <img class="brand-img" src="/favicon.png">
+                    <h2>Le Loc Tai</h2>
+                </a>
+            </div>
+            <!-- Group links for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="nav-text" href="/app">App</a>
+                    </li>
+                    <li>
+                        <a class="nav-text" href="/game">Game</a>
+                    </li>
+                    <li>
+                        <a class="nav-text" href="/asset">Asset</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>	<div class="article">
+		<article>
+			One day I found <a href="http://woodgears.ca/marbleadd/">this amazing wooden adding machine</a>.
+			I want one, but I didn't have woodworking tools lying around. What I have is Unity and 3ds Max, so I created this.<br>
+			<h3>How to use</h3>
+			- Input the first number in binary form by clicking the pipe on top.<br>
+			- Pull the upper slider to confirm the number.<br>
+			- Repeat for others number you want to add. Remember this is a 6-bits adder, so it can't handle number greater than 2<sup>6</sup> - 1 = 63.<br>
+			- Drag the lower slider to the right to get final result, to the left to reset.<br>
+		</article>
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="600px"></canvas>
+        <style type="text/css">
+        	#loadingBox {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        	}
+        
+        	#loadingInfo {
+        	    color: #666;
+        	    width: 100%;
+        	    text-transform: uppercase;
+        	    text-align: center;
+        	    font-size: 12px;
+        	    margin-top: 10px;
+        	}
+        
+        </style>
+        <div id="loadingBox">
+            <img id="spinner" src="/images/ajax-loader.gif" style="margin: 0 auto" />
+            <p id="loadingInfo">Loading...</p>                
+        </div>  	</div>
+    <footer>
+    	<div class="row">
+    		<div class="column contact">
+    			<h4>About</h4>
+    			<ul>
+    				<li><a href="/about">About</a></li>
+    				<li><a href="mailto:vzttzv+portfolio@gmail.com">Contact</a></li>
+    			</ul>
+    		</div>
+    	
+    		<div class="column social">
+    			<h4>Connect</h4>
+    			<ul>
+    				<li><a href="https://twitter.com/LeLocTai">Twitter</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	<p id="copyright">Copyright © 2016 Le Loc Tai. All rights reserved</p>
+    </footer>    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- build:js /scripts.min.js defer-->
+    <script src="/js/script.js"></script>
+    <script src="/js/ga.js"></script>
+        <!-- endbuild -->
+    <script type='text/javascript'>
+		var Module = {
+		TOTAL_MEMORY: 268435456,
+		errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+		compatibilitycheck: null,
+		backgroundColor: "#FFFFFF",
+		splashStyle: "Dark",
+		dataUrl: "Marblewebgl/Release/Marblewebgl.data",
+		codeUrl: "Marblewebgl/Release/Marblewebgl.js",
+		asmUrl: "Marblewebgl/Release/Marblewebgl.asm.js",
+		memUrl: "Marblewebgl/Release/Marblewebgl.mem",
+		};
+	</script>
+<script src="Marblewebgl/Release/UnityLoader.js"></script>
+</body>
+
+</html>
