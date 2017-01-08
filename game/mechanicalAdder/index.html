@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="/scss/global.css">
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="scss/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">    <script src="/webgl/unityProgress.js"></script>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"></head>
 
 <body>
     <nav id="topnav" class="navbar navbar-default navbar-static-top" role="navigation">
@@ -51,7 +50,7 @@
 			- Repeat for others number you want to add. Remember this is a 6-bits adder, so it can't handle number greater than 2<sup>6</sup> - 1 = 63.<br>
 			- Drag the lower slider to the right to get final result, to the left to reset.<br>
 		</article>
-        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="600px"></canvas>
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" ></canvas>
         <style type="text/css">
         	#loadingBox {
             width: 100%;
@@ -114,7 +113,8 @@
 		memUrl: "Marblewebgl/Release/Marblewebgl.mem",
 		};
 	</script>
-<script src="Marblewebgl/Release/UnityLoader.js"></script>
+	<script src="Marblewebgl/Release/UnityLoader.js"></script>
+    <script src="/webgl/unityProgress.js"></script>
 </body>
 
 </html>
