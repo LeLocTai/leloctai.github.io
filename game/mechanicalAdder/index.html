@@ -40,40 +40,46 @@
                 </ul>
             </div>
         </div>
-    </nav>	<div class="article">
+    </nav>    <div class="hero">
+        <header class="hero-text">Virtual Mechanical Adder</header>
+    </div>
+
+	<div class="article">
 		<article>
-			One day I found <a href="http://woodgears.ca/marbleadd/">this amazing wooden adding machine</a>.
-			I want one, but I didn't have woodworking tools lying around. What I have is Unity and 3ds Max, so I created this.<br>
+			One day I found <a href="http://woodgears.ca/marbleadd/">this amazing binary marble adding machine</a> browsing around. I want one, but didn't have serious woodworking tools lying around. So I decided to created a simulation of it.<br>
 			<h3>How to use</h3>
 			- Input the first number in binary form by clicking the pipe on top.<br>
 			- Pull the upper slider to confirm the number.<br>
-			- Repeat for others number you want to add. Remember this is a 6-bits adder, so it can't handle number greater than 2<sup>6</sup> - 1 = 63.<br>
+			- Repeat for others number you want to add. Be aware that this is a 6-bits adder, so it can't handle number greater than 2<sup>6</sup> - 1 = 63.<br>
 			- Drag the lower slider to the right to get final result, to the left to reset.<br>
+			- The reset button is for when the physic simulation gone haywire.<br>
 		</article>
-        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" ></canvas>
-        <style type="text/css">
-        	#loadingBox {
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-        	}
-        
-        	#loadingInfo {
-        	    color: #666;
+		<div class="canvas-wrapper">
+		    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" ></canvas>		    
+        	<style type="text/css">
+        		#loadingBox {
         	    width: 100%;
-        	    text-transform: uppercase;
+        	    position: absolute;
+        	    top: 50%;
+        	    transform: translateY(-50%);
         	    text-align: center;
-        	    font-size: 12px;
-        	    margin-top: 10px;
-        	}
-        
-        </style>
-        <div id="loadingBox">
-            <img id="spinner" src="/images/ajax-loader.gif" style="margin: 0 auto" />
-            <p id="loadingInfo">Loading...</p>                
-        </div>  	</div>
+        		}
+        	
+        		#loadingInfo {
+        		    color: #666;
+        		    width: 100%;
+        		    text-transform: uppercase;
+        		    text-align: center;
+        		    font-size: 12px;
+        		    margin-top: 10px;
+        		}
+        	
+        	</style>
+        	<div id="loadingBox">
+        	    <img id="spinner" src="/images/ajax-loader.gif" style="margin: 0 auto" />
+        	    <p id="loadingInfo">Loading...</p>                
+        	</div>  		</div>
+	</div>
     <footer>
     	<div class="row">
     		<div class="column contact">
