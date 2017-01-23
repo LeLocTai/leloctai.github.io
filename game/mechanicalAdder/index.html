@@ -47,12 +47,13 @@
 	<div class="article">
 		<article>
 			One day I found <a href="http://woodgears.ca/marbleadd/">this amazing binary marble adding machine</a> browsing around. I want one, but didn't have serious woodworking tools lying around. So I decided to created a simulation of it.<br>
-			<h3>How to use</h3>
+			<h3><strong>How to use</strong></h3>
 			- Input the first number in binary form by clicking the pipe on top.<br>
 			- Pull the upper slider to confirm the number.<br>
 			- Repeat for others number you want to add. Be aware that this is a 6-bits adder, so it can't handle number greater than 2<sup>6</sup> - 1 = 63.<br>
 			- Drag the lower slider to the right to get final result, to the left to reset.<br>
 			- The reset button is for when the physic simulation gone haywire.<br>
+			<mark>Note:</mark> scroll wheel doesn't work when your mouse hover the simulation.<br>
 		</article>
 		<div class="canvas-wrapper">
 		    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" ></canvas>		    
@@ -120,7 +121,7 @@
 		};
 	</script>
 	<script src="Marblewebgl/Release/UnityLoader.js"></script>
-    <script src="/webgl/unityProgress.js"></script>
+    <script src="/js/unityProgress.js"></script>
 </body>
 
 </html>

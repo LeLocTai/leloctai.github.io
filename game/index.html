@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Tai's games</title>
+    <title>Games</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/scss/global.css">
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="scss/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">    <link rel="stylesheet" href="/scss/gallery.css">
+</head>
 
 <body>
     <nav id="topnav" class="navbar navbar-default navbar-static-top" role="navigation">
@@ -46,13 +47,16 @@
         <header class="hero-text">Game</header>
     </div>
 
-    <div class="entry" onclick="location.href='mechanicalAdder'">
+    <div class="entry">
         <div class="entry-col">
-            <img class="attach-right key-img" src="image/marblemachine.jpg">
+            <div class="key-img-holder">
+                <img class="key-img" src="image/marblemachine.jpg">
+            </div>
         </div> 
         <div class="entry-col text-block">
-            <h3>Virtual&nbsp;mechanical binary&nbsp;adder</h3>
-            <p>A 6-bits mechanical ripple carry adder, using marble and wooden mechanism to simulate electric flow through logic gate</p>
+            <h3>Mechanical adder</h3>
+            <p>A 6-bits mechanical ripple carry adder, using marble and wooden mechanism instead of logic gate</p>
+            <a href="mechanicalAdder" class="trailing-arrow">Learn more</a>
         </div>
     </div>
 

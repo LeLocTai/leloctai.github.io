@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#loadingBox").hide()}),$("a.demo").click(function(){$("#loadingBox").show(),$("a.middle").hide();var e=document.createElement("script");e.src="Translucentwebgl/Release/UnityLoader.js",$("body").append(e)});

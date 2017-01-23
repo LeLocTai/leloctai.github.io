@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Translucent Image</title>
+    <title>Asset</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/scss/global.css">
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="scss/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">    <link rel="stylesheet" href="/scss/gallery.css">
 </head>
 
 <body>
@@ -43,43 +43,24 @@
             </div>
         </div>
     </nav>
-    <div class="group">
-        <h1 class="text">Translucent Image</h1>
-        <h2 class="text">Create <span class="depth text">depth</span> and <span class="colorful text">vitality</span> in your game<br>at minimal cost</h2>
-        <a class="cta demo" href="#demo">Play the demo</a>
-        <img class="group-img" src="https://fakeimg.pl/1200x768/f6f6f6/000/?text=img+placeholder">
+    <div class="hero">
+        <header class="hero-text">Asset</header>
     </div>
-    <div class="group"></div>
-    <div class="group" id="demo">
-            <div id="canvas-wrapper">
-                <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="400px" width="600px"></canvas>
-                <style type="text/css">
-                	#loadingBox {
-                    width: 100%;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    text-align: center;
-                	}
-                
-                	#loadingInfo {
-                	    color: #666;
-                	    width: 100%;
-                	    text-transform: uppercase;
-                	    text-align: center;
-                	    font-size: 12px;
-                	    margin-top: 10px;
-                	}
-                
-                </style>
-                <div id="loadingBox">
-                    <img id="spinner" src="/images/ajax-loader.gif" style="margin: 0 auto" />
-                    <p id="loadingInfo">Loading...</p>                
-                </div>                  <a class="cta demo middle">Play the demo</a>
+
+    <div class="entry">
+        <div class="entry-col img-col">
+            <div class="key-img-holder">
+                <img class="key-img" src="image/TranslucentImageIcon.jpg">
             </div>
-        <a class="cta" href="https://github.com/LeLocTai/leloctai.github.io/releases/download/v0.0.1b/TranslucentImage.apk">Get the APK</a>
+        </div> 
+        <div class="entry-col text-block">
+            <h3>Translucent image</h3>
+            <p>Super fast blur behind UI for Unity</p>
+            <a href="translucentimage" class="trailing-arrow">Learn more</a>
+        </div>
     </div>
-    
+
+
     <footer>
     	<div class="row">
     		<div class="column contact">
@@ -98,39 +79,7 @@
     		</div>
     	</div>
     	<p id="copyright">Copyright © 2016 Le Loc Tai. All rights reserved</p>
-    </footer>
-    
-    <script type='text/javascript'>
-    /*Release*/
-    var Module = {
-        TOTAL_MEMORY: 268435456,
-        errorhandler: null, // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-        compatibilitycheck: null,
-        backgroundColor: "#FFFFFF",
-        dataUrl: "Translucentwebgl/Release/Translucentwebgl.data",
-        codeUrl: "Translucentwebgl/Release/Translucentwebgl.js",
-        asmUrl: "Translucentwebgl/Release/Translucentwebgl.asm.js",
-        memUrl: "Translucentwebgl/Release/Translucentwebgl.mem",
-
-    };
-
-  //   /* Dev*/
-  //   var Module = {
-  //   TOTAL_MEMORY: 268435456,
-  //   errorhandler: null,         // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-  //   compatibilitycheck: null,
-  //   dataUrl: "Translucentwebgl/Development/Translucentwebgl.data",
-  //   codeUrl: "Translucentwebgl/Development/UnityEngine.js",
-  //   memUrl: "Translucentwebgl/Development/UnityEngine.mem",
-  //   dynamicLibraries: ["Translucentwebgl/Development/Translucentwebgl.js"],
-  // };
-    </script>
-    <!--<script src="Translucentwebgl/Release/UnityLoader.js"></script>-->
-    <!-- <script src="Translucentwebgl/Development/UnityLoader.js"></script> -->
-    <script defer src="/webgl/unityProgress.js"></script>
-    <script defer src="js/script.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    </footer>    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
