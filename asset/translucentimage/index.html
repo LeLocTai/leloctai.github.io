@@ -3,14 +3,15 @@
 
 <head>
     <title>Translucent Image</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/scss/global.css">
-    <link rel="stylesheet" href="/scss/style.css">
-    <link rel="stylesheet" href="scss/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">    
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/global.css">
+<link rel="stylesheet" href="/scss/style.css">
+<link rel="stylesheet" href="scss/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
 </head>
 
 <body>
@@ -44,62 +45,115 @@
         </div>
     </nav>
     <div class="group">
-        <h1 class="text">Translucent Image</h1>
-        <h2 class="text">
-            Create <span class="depth text">depth</span> and <span class="colorful text">vitality</span>
-            in your game<br>at minimal cost
-         </h2>
-        <div class="link-group">
-            <a href="#demo" class="trailing-arrow">Play the demo</a>
-            <a href="#" class="trailing-arrow">Read the doc</a>
-        </div>
-        <img class="group-img" src="https://fakeimg.pl/1200x768/fff/000/?text=placeholder">
-    </div>
+        <div class="overlay">
+            <h1 class="text">Translucent Image</h1>
+            <h2 class="text">
+                    Create <span class="depth text">depth</span> and <span class="colorful text">vitality</span>
+                    in your&nbsp;game<br>at minimal cost
+                 </h2>
 
-    <div class="group features-group">
-        <figure>
-            <img src="http://fakeimg.pl/300x300/00CED1/FFF/?text=placeholder">
-            <figcaption>Gloriously fast</figcaption>
-        </figure>        
-    </div>
-
-    <div class="group features-group">
-        <figure>
-            <img src="http://fakeimg.pl/300x300/00CED1/FFF/?text=placeholder">
-            <figcaption>Uniquely your</figcaption>
-        </figure>
-    </div>
-
-    <div class="group" id="demo">
-            <div id="canvas-wrapper">
-                <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="400px" width="600px"></canvas>
-                <style type="text/css">
-                	#loadingBox {
-                    width: 100%;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    text-align: center;
-                	}
-                
-                	#loadingInfo {
-                	    color: #666;
-                	    width: 100%;
-                	    text-transform: uppercase;
-                	    text-align: center;
-                	    font-size: 12px;
-                	    margin-top: 10px;
-                	}
-                
-                </style>
-                <div id="loadingBox">
-                    <img id="spinner" src="/images/ajax-loader.gif" style="margin: 0 auto" />
-                    <p id="loadingInfo">Loading...</p>                
-                </div>                  <a class="demo middle">Play</a>
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//leloctai.us14.list-manage.com/subscribe/post?u=6b19c1a97c5abdeba229a034e&amp;id=5ace9b64d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <label for="mce-EMAIL">Get notify when it out</label>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_6b19c1a97c5abdeba229a034e_5ace9b64d3" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </div>
+                </form>
             </div>
-        <a class="cta" id="download" href="https://github.com/LeLocTai/leloctai.github.io/releases/latest">Get the APK</a>
+            <!--End mc_embed_signup-->
+
+            <div class="link-group">
+                <a href="#" class="trailing-arrow">Read the doc</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img class="group-img" src="image/Hero-TI.jpg">
+            <div id="demo">
+                <div id="canvas-wrapper">
+                    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="400px" width="600px"></canvas>
+                    <style type="text/css">
+                    #loadingBox {
+                        display: none;
+                        position: relative;
+                        width: 100%;
+                        top: -50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                    
+                    #spinner {
+                        width: auto;
+                    }
+                    
+                    #loadingInfo {
+                        color: #666;
+                        width: 100%;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                    </style>
+                    <div id="loadingBox">
+                        <img id="spinner" src="/images/ajax-loader.svg" />
+                        <p id="loadingInfo">Loading...</p>
+                    </div>
+                    <a class="demo middle">Demo ▷</a>
+                </div>
+                <a class="cta" id="download" href="https://github.com/LeLocTai/leloctai.github.io/releases/latest">Get the APK</a>
+            </div>
+        </div>
     </div>
-    
+
+    <div class="group features-group">
+        <div class="features">
+            <figure>
+                <img src="image/fps.png">
+                <figcaption>Gloriously fast</figcaption>
+            </figure>
+            <figure>
+                <img src="image/Customizable.jpg">
+                <figcaption>No coding required</figcaption>
+            </figure>
+            <figure>
+                <img src="image/source.png">
+                <figcaption>Source included</figcaption>
+            </figure>
+        </div>
+    </div>
+
+
+
+
+    <div class="group">
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="//leloctai.us14.list-manage.com/subscribe/post?u=6b19c1a97c5abdeba229a034e&amp;id=5ace9b64d3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Get notify when it out</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_6b19c1a97c5abdeba229a034e_5ace9b64d3" tabindex="-1" value="">
+                    </div>
+                    <div class="clear">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+    </div>
     <footer>
     	<div class="row">
     		<div class="column contact">
@@ -119,7 +173,7 @@
     	</div>
     	<p id="copyright">Copyright © 2016 Le Loc Tai. All rights reserved</p>
     </footer>
-    
+
     <script type='text/javascript'>
     /*Release*/
     var Module = {
@@ -134,16 +188,16 @@
 
     };
 
-  //   /* Dev*/
-  //   var Module = {
-  //   TOTAL_MEMORY: 268435456,
-  //   errorhandler: null,         // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-  //   compatibilitycheck: null,
-  //   dataUrl: "Translucentwebgl/Development/Translucentwebgl.data",
-  //   codeUrl: "Translucentwebgl/Development/UnityEngine.js",
-  //   memUrl: "Translucentwebgl/Development/UnityEngine.mem",
-  //   dynamicLibraries: ["Translucentwebgl/Development/Translucentwebgl.js"],
-  // };
+    //   /* Dev*/
+    //   var Module = {
+    //   TOTAL_MEMORY: 268435456,
+    //   errorhandler: null,         // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    //   compatibilitycheck: null,
+    //   dataUrl: "Translucentwebgl/Development/Translucentwebgl.data",
+    //   codeUrl: "Translucentwebgl/Development/UnityEngine.js",
+    //   memUrl: "Translucentwebgl/Development/UnityEngine.mem",
+    //   dynamicLibraries: ["Translucentwebgl/Development/Translucentwebgl.js"],
+    // };
     </script>
     <!--<script src="Translucentwebgl/Release/UnityLoader.js"></script>-->
     <!-- <script src="Translucentwebgl/Development/UnityLoader.js"></script> -->
