@@ -1,0 +1,1 @@
+function attachSidebar(n){n>450?nav.css("position","fixed"):nav.css("position","relative")}var last_known_scroll_position=0,ticking=!1,nav=$("#navbar");$(document).scroll(function(){last_known_scroll_position=window.scrollY,ticking||window.requestAnimationFrame(function(){attachSidebar(last_known_scroll_position),ticking=!1}),ticking=!0});
