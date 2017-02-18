@@ -71,16 +71,16 @@
             <article class="text-col">
                 <p>This is the official online documentation of the Unity Asset Translucent Image. You can get it <a href="http://u3d.as/FzW">here</a>.</p>
                 <p>You need some basic knowledge about Unity in order to follow this documentation, if you don't, check out <a href="https://unity3d.com/learn/tutorials/topics/interface-essentials">Unity official tutorials</a></p>
-                <p>If you haven't, I highly recommend check out the <a href="/asset/translucentimage">demo(WebGL/Android)</a></p>
+                <p>If you haven't, I highly recommend check out the <a href="/asset/translucentimage">demo (WebGL/Android)</a></p>
                 <p>
-                    <mark>Note:</mark>This package is still in early development. If you find any problem in the package or this documentation, feel free to contact me either by the form below or <a href="mailto:support@letai.freshdesk.com">click here</a> if you prefer email
+                    <mark>Note:</mark>This package is still in early development. If you find any problem in the package or this documentation, feel free to contact me either by the form below or by <a href="mailto:support@letai.freshdesk.com">email</a>
                 </p>
 
 
                 <h2 id="gs">Getting Started</h2>
                 <p>Add Translucent Image Source component to your main camera</p>
                 <img class="doc-img" src="image/add-component.png">
-                <p>Create UI/Translucent Image as you would with built-in UI</p>
+                <p>Create <code>UI/Translucent Image</code> as you would with built-in UI</p>
                 <img class="doc-img" src="image/create-ui.png">
                 <p>Done! (Red cube is optional and not included in the package)</p>
                 <img class="doc-img" src="image/result.png">
@@ -97,7 +97,7 @@
                         <strong>Iteration</strong>: Increase blur quality and blurryness when it increase. The bigger it is the less performance loss when increasing further
                     </li>
                     <li>
-                        <strong>Downsample</strong>: Decrease the resolution before processing to increase performance. Side effect include increase blurryness
+                        <strong>Downsample</strong>: Decrease the resolution before processing to increase performance. Side effect include increase blurryness and possible flickering
                     </li>
                     <li>
                         <strong>Max Update Rate</strong>: How many time the effect update it self per second. It can increase performance and decrease battery usage. Set to 0 to pause, this can reduce power usage/ prevent overheat when you don't need dynamically updating background - like in a pause menu for example
@@ -122,7 +122,7 @@
                     <li>
                         <strong>Material</strong>: Multiple Translucent Image using the same material will have the same vibrancy, but they will be batch and only take one draw call.
                         <br>
-                        <mark>Importance!</mark> Material used here must use the shader UI/TranslucentImage
+                        <mark>Importance!</mark> Material used here must use the shader <code>UI/TranslucentImage</code>
                     </li>
                     <li>
                         <strong>Raycast Target</strong>: same as other UI element, whether it receive pointer event or not.
@@ -132,9 +132,6 @@
 
                 <h2 id="rt">Change variable at runtime</h2>
                 <p>The demo scene have a few example on changing variable at runtime, both from code and Unity animation system</p>
-                <span><pre><code class="cs">
-            				Code ();
-            			</code></pre></span>
 
 
                 <h2 id="faq">Frequently asked questions</h2>
@@ -148,30 +145,31 @@
                 <style type="text/css" media="screen, projection">
                 @import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css);
                 </style>
-                <iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://letai.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&formTitle=Support+request&submitTitle=Send&screenshot=no&captcha=yes" scrolling="no" height="500px" width="100%" frameborder="0">
-                </iframe>
+                <pre><iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://letai.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&formTitle=Support+request&submitTitle=Send&screenshot=no&captcha=yes" scrolling="no" height="500px" width="100%" frameborder="0">
+                </iframe></pre>
             </article>
         </section>
     </div>
     <footer>
-	<div class="row">
-		<div class="column contact">
-			<h4>About</h4>
-			<ul>
-				<li><a href="/about">About</a></li>
-				<li><a href="mailto:vzttzv+portfolio@gmail.com">Contact</a></li>
-			</ul>
-		</div>
-	
-		<div class="column social">
-			<h4>Connect</h4>
-			<ul>
-				<li><a href="https://twitter.com/LeLocTai">Twitter</a></li>
-			</ul>
-		</div>
-	</div>
-	<p id="copyright">Copyright © 2016 Le Loc Tai. All rights reserved</p>
-</footer> <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    <div class="row">
+        <div class="column contact">
+            <h4>About</h4>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="mailto:vzttzv+portfolio@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="column social">
+            <h4>Connect</h4>
+            <ul>
+                <li><a href="https://twitter.com/LeLocTai">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <small id="copyright">Copyright © 2016 Le Loc Tai. All rights reserved</small>
+</footer>
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -181,11 +179,7 @@
     <!-- endbuild -->
     <script src="js/script.js"></script>
 
-    <link rel="stylesheet" href="/scss/highlight/default.css">
-    <script src="/js/highlight.js"></script>
-    <script>
-    hljs.initHighlightingOnLoad();
-    </script>
+
 </body>
 
 </html>
