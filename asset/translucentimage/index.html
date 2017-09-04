@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Translucent Image</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/scss/global.css">
+    
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K6W69HX');
+    </script>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6W69HX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <nav id="topnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!--Group brand and button for mobile-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div class="navicon"></div>
+                </button>
+                <a class="navbar-brand nav-text" href="/">
+                    <img class="brand-img" src="/favicon.png">
+                </a>
+            </div>
+            <!-- Group links for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="nav-text" href="/app">App</a>
+                    </li>
+                    <li>
+                        <a class="nav-text" href="/game">Game</a>
+                    </li>
+                    <li>
+                        <a class="nav-text" href="/asset">Unity Asset</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="group">
+        <div class="overlay">
+            <h1 class="text">Translucent Image</h1>
+            <h2 class="text">Add <span class="depth text">depth</span> and <span class="colorful text">vitality</span> to your&nbsp;game<br>without destroying performance</h2>
+
+            <a href="https://www.assetstore.unity3d.com/en/#!/content/78464" target="_blank">
+                <button type="button" class="btn btn-lg btn-default">Get it now on Asset Store</button>
+            </a>
+
+            <div class="link-group">
+                <a href="http://tid.readthedocs.io" class="trailing-arrow">Read the docs</a>
+            </div>
+        </div>
+
+        <div class="hero-wrapper">
+            <div class="hero-img">
+                <img class="group-img" src="image/Hero-TI.jpg" width="1280" height="1024">
+                <div id="demo">
+                    <div id="canvas-wrapper">
+                        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="400px" width="600px"></canvas>
+                        <a class="demo middle">Demo ▷</a>
+                        <div style="
+        							    width: 100%;
+        							    height: 100%;
+        							    position: relative;
+        							    top: -100%;
+        							    left: 0;
+        							    pointer-events: none;">
+                            <style type="text/css">
+                            #loadingBox {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
+                            }
+                            
+                            #spinner {
+                                width: auto;
+                            }
+                            
+                            #loadingInfo {
+                                color: #666;
+                                width: 100%;
+                                text-transform: uppercase;
+                                text-align: center;
+                                font-size: 12px;
+                                margin: 10px 0 0 0;
+                            }
+                            </style>
+                            <div id="loadingBox">
+                                <img id="spinner" src="/images/ajax-loader.svg" />
+                                <p id="loadingInfo">Loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="cta" id="download" href="https://github.com/LeLocTai/leloctai.github.io/releases/latest">Get the APK</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="group features-group">
+        <div class="feature">
+            <figure>
+                <div class="shadow"></div>
+            </figure>
+            <p>Gloriously fast</p>
+        </div>
+        <div class="feature">
+            <figure class="reverse">
+                <div class="shadow"></div>
+            </figure>
+            <p class="reverse">No coding required</p>
+        </div>
+        <div class="feature ">
+            <figure>
+                <div class="shadow "></div>
+            </figure>
+            <p>Source included</p>
+        </div>
+        <a href="https://www.assetstore.unity3d.com/en/#!/content/78464 " target="_blank ">
+            <button type="button " class="btn btn-lg btn-default mt-lg">Get it now on Asset Store</button>
+        </a>
+    </div>
+    <footer>
+        <div class="row container">
+            <div class="column contact">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="mailto:vzttzv+portfolio@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="column social">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://twitter.com/LeLocTai">Twitter</a></li>
+                </ul>
+            </div>
+            <small id="copyright">Copyright © 2016 Le Loc Tai. All rights reserved</small>
+        </div>
+    </footer>
+
+
+    <script type='text/javascript'>
+    /*Release*/
+    var Module = {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null, // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        backgroundColor: "#FFFFFF ",
+        dataUrl: "Translucentwebgl/Release/Translucentwebgl.data",
+        codeUrl: "Translucentwebgl/Release/Translucentwebgl.js",
+        asmUrl: "Translucentwebgl/Release/Translucentwebgl.asm.js",
+        memUrl: "Translucentwebgl/Release/Translucentwebgl.mem",
+
+    };
+
+    //   /* Dev*/
+    //   var Module = {
+    //   TOTAL_MEMORY: 268435456,
+    //   errorhandler: null,         // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    //   compatibilitycheck: null,
+    //   dataUrl: "Translucentwebgl/Development/Translucentwebgl.data ",
+    //   codeUrl: "Translucentwebgl/Development/UnityEngine.js ",
+    //   memUrl: "Translucentwebgl/Development/UnityEngine.mem ",
+    //   dynamicLibraries: ["Translucentwebgl/Development/Translucentwebgl.js "],
+    // };
+    </script>
+    <!--<script src="Translucentwebgl/Release/UnityLoader.js "></script>-->
+    <!-- <script src="Translucentwebgl/Development/UnityLoader.js "></script> -->
+    <script defer src="/js/unityProgress.js "></script>
+    <script defer src="js/script.js "></script>
+    <script src="/lib/jquery-3.2.1.min.js"></script>
+    <script src="/lib/bootstrap.min.js"></script>
+</body>
+
+</html>

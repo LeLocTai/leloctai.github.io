@@ -1,0 +1,1 @@
+function UnityProgress(n){this.message="",this.SetProgress=function(n){},this.SetMessage=function(n){document.getElementById("loadingInfo").innerHTML=n},this.Clear=function(){document.getElementById("loadingBox").style.display="none"},this.Update=function(){}}

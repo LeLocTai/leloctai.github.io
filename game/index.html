@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/scss/global.css">
+    
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K6W69HX');
+    </script>
+    <link rel="stylesheet" href="/scss/gallery.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6W69HX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <nav id="topnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!--Group brand and button for mobile-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div class="navicon"></div>
+                </button>
+                <a class="navbar-brand nav-text" href="/">
+                    <img class="brand-img" src="/favicon.png">
+                </a>
+            </div>
+            <!-- Group links for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="nav-text" href="/app">App</a>
+                    </li>
+                    <li>
+                        <a class="nav-text" href="/game">Game</a>
+                    </li>
+                    <li>
+                        <a class="nav-text" href="/asset">Unity Asset</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <header class="hero-text">Game</header>
+    </div>
+
+    <div class="entry">
+        <div class="entry-col">
+            <div class="key-img-holder">
+                <img class="key-img" src="image/marblemachine.jpg">
+            </div>
+        </div>
+        <div class="entry-col text-block">
+            <h3>Mechanical adder</h3>
+            <p>A 6-bits mechanical ripple carry adder, using marble and wooden mechanism instead of logic gate</p>
+            <a href="mechanicalAdder" class="trailing-arrow">Learn more</a>
+        </div>
+    </div>
+
+
+    <footer>
+    <div class="row container">
+        <div class="column contact">
+            <h4>About</h4>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="mailto:vzttzv+portfolio@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="column social">
+            <h4>Connect</h4>
+            <ul>
+                <li><a href="https://twitter.com/LeLocTai">Twitter</a></li>
+            </ul>
+        </div>
+        <small id="copyright">Copyright © 2016 Le Loc Tai. All rights reserved</small>
+    </div>
+</footer>
+ <script src="/lib/jquery-3.2.1.min.js"></script>
+<script src="/lib/bootstrap.min.js"></script>
+
+</body>
+
+</html>
